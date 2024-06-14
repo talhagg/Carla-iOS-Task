@@ -5,3 +5,14 @@
   Created by Talha Gölcügezli on 14.06.2024.
   
 */
+
+"ROVERS_HEADER_TITLE" = "Rovers";
+"ROVERS_MAIN_TITLE" = "Choose a Rover Explore";
+
+"ROVERS_LIST_LANDING_DATE_TITLE" = "Landing Date:";
+"ROVERS_LIST_LAUNCH_DATE_TITLE" = "Launch Date:";
+
+"ROVERS_DETAIL_NUMBER_CAMERA_TITLE" = "Number of Cameras:";
+"ROVERS_DETAIL_NUMBER_PHOTOS_TITLE" = "Number of Photos:";
+
+"ROVERS_DETAIL_ID_TITLE" = "ID:";
