@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+public struct Cameras: Decodable {
+    let name: String
+    let full_name: String
+}
