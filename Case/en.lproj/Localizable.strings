@@ -16,3 +16,9 @@
 "ROVERS_DETAIL_NUMBER_PHOTOS_TITLE" = "Number of Photos:";
 
 "ROVERS_DETAIL_ID_TITLE" = "ID:";
+
+
+"RoverImageURL_Curiosity" = "https://mars-photos.herokuapp.com/explore/images/Curiosity_rover.jpg";
+"RoverImageURL_Spirit" = "https://mars-photos.herokuapp.com/explore/images/Spirit_rover.jpg";
+"RoverImageURL_Opportunity" = "https://mars-photos.herokuapp.com/explore/images/Opportunity_rover.jpg";
+"RoverImageURL_Perseverance" = "https://mars-photos.herokuapp.com/explore/images/Perseverance_rover.jpg";

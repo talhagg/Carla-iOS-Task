@@ -10,19 +10,23 @@ import Foundation
 class DateFormatterHelper {
     static let shared = DateFormatterHelper()
     
-    private let dateFormatter: DateFormatter
+    private let inputDateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        return formatter
+    }()
     
-    private init() {
-        dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd"
-    }
+    private let outputDateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy.dd.MM"
+        return formatter
+    }()
     
     func formatDate(_ dateString: String) -> String {
-        guard let date = dateFormatter.date(from: dateString) else {
+        guard let date = inputDateFormatter.date(from: dateString) else {
             return dateString
         }
         
-        dateFormatter.dateFormat = "yyyy.MM.dd"
-        return dateFormatter.string(from: date)
+        return outputDateFormatter.string(from: date)
     }
 }
