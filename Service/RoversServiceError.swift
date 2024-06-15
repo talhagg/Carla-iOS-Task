@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class RoversServiceError: LocalizedError {
+public final class RoversServiceError: LocalizedError {
     enum ErrorType {
         case serviceError(error: Error)
         case serializationError(error: Error)
@@ -20,7 +20,7 @@ final class RoversServiceError: LocalizedError {
         self.errorType = errorType
     }
     
-    var errorDescription: String? {
+    public var errorDescription: String? {
         switch errorType {
         case .serviceError(let error):
             return "Service Error: \(error.localizedDescription)"

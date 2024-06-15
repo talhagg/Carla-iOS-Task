@@ -8,12 +8,14 @@
 import Foundation
 import Alamofire
 
-protocol ErrorHandling {
+public protocol ErrorHandling {
     func handleError<T>(error: Error, completion: @escaping (Result<T, RoversServiceError>) -> Void)
 }
 
-class ErrorHandler: ErrorHandling {
-    func handleError<T>(error: Error, completion: @escaping (Result<T, RoversServiceError>) -> Void) {
+public final class ErrorHandler: ErrorHandling {
+    public init() { }
+    
+    public func handleError<T>(error: Error, completion: @escaping (Result<T, RoversServiceError>) -> Void) {
         if let afError = error as? AFError {
             switch afError {
             case .responseValidationFailed(let reason):
