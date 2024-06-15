@@ -7,34 +7,12 @@
 
 import Foundation
 
-enum RoversURL: String {
-    case baseURL = "RoversBaseURL"
-    case latest = "latets"
+public struct URLManager {
+    static let baseURL = "https://mars-photos.herokuapp.com/api/v1/rovers"
+    static let latetsBaseURL = "http://mars-photos.herokuapp.com/api/v1/rovers"
+    
+    static func roverLatestPhotosURL(for roverName: String) -> String {
+        return "\(latetsBaseURL)/\(roverName)/latest_photos"
+    }
 }
 
-public final class URLManager {
-    static let shared = URLManager()
-    private let plistName = "URLs"
-    private var plistDict: [String: Any]?
-    
-    private init() {
-        loadPlistData()
-    }
-    
-    private func loadPlistData() {
-        guard let plistURL = Bundle.main.url(forResource: plistName, withExtension: "plist") else {
-            fatalError("\(plistName).plist not found")
-        }
-        
-        guard let plistData = try? Data(contentsOf: plistURL),
-              let plistDict = try? PropertyListSerialization.propertyList(from: plistData, options: [], format: nil) as? [String: Any] else {
-            fatalError("Failed to load \(plistName).plist")
-        }
-        
-        self.plistDict = plistDict
-    }
-    
-    func getURL(for key: RoversURL) -> String? {
-        return plistDict?[key.rawValue] as? String
-    }
-}

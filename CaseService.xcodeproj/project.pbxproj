@@ -13,8 +13,6 @@
 		74B660F82C1CCCD700E53211 /* CaseService.h in Headers */ = {isa = PBXBuildFile; fileRef = 74B660EA2C1CCCD700E53211 /* CaseService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		74B661032C1CCD1200E53211 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 74B661022C1CCD1200E53211 /* Alamofire */; };
 		74B661052C1CCD1200E53211 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 74B661042C1CCD1200E53211 /* AlamofireDynamic */; };
-		74B6610A2C1CCDB900E53211 /* URLs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 74B661092C1CCDB900E53211 /* URLs.plist */; };
-		74B6610B2C1CCDB900E53211 /* URLs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 74B661092C1CCDB900E53211 /* URLs.plist */; };
 		74B6610D2C1CCE9D00E53211 /* Rovers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B6610C2C1CCE9D00E53211 /* Rovers.swift */; };
 		74B6610E2C1CCE9D00E53211 /* Rovers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B6610C2C1CCE9D00E53211 /* Rovers.swift */; };
 		74B661102C1CCF7200E53211 /* Cameras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B6610F2C1CCF7200E53211 /* Cameras.swift */; };
@@ -29,6 +27,12 @@
 		74B6611D2C1CD45C00E53211 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B6611B2C1CD45C00E53211 /* ErrorHandler.swift */; };
 		74B661202C1CD6B900E53211 /* URLManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B6611F2C1CD6B900E53211 /* URLManager.swift */; };
 		74B661212C1CD6B900E53211 /* URLManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B6611F2C1CD6B900E53211 /* URLManager.swift */; };
+		74B6618C2C1DD72B00E53211 /* LatestPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B6618B2C1DD72B00E53211 /* LatestPhotos.swift */; };
+		74B6618D2C1DD72B00E53211 /* LatestPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B6618B2C1DD72B00E53211 /* LatestPhotos.swift */; };
+		74B6618F2C1DD74400E53211 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B6618E2C1DD74400E53211 /* Camera.swift */; };
+		74B661902C1DD74400E53211 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B6618E2C1DD74400E53211 /* Camera.swift */; };
+		74B661922C1DD8D200E53211 /* LatestPhotoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B661912C1DD8D200E53211 /* LatestPhotoResponse.swift */; };
+		74B661932C1DD8D200E53211 /* LatestPhotoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B661912C1DD8D200E53211 /* LatestPhotoResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +51,6 @@
 		74B660EB2C1CCCD700E53211 /* CaseService.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = CaseService.docc; sourceTree = "<group>"; };
 		74B660F12C1CCCD700E53211 /* CaseServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaseServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74B660F62C1CCCD700E53211 /* CaseServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseServiceTests.swift; sourceTree = "<group>"; };
-		74B661092C1CCDB900E53211 /* URLs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = URLs.plist; sourceTree = "<group>"; };
 		74B6610C2C1CCE9D00E53211 /* Rovers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rovers.swift; sourceTree = "<group>"; };
 		74B6610F2C1CCF7200E53211 /* Cameras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cameras.swift; sourceTree = "<group>"; };
 		74B661122C1CD0AC00E53211 /* RoversResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoversResponse.swift; sourceTree = "<group>"; };
@@ -55,6 +58,9 @@
 		74B661182C1CD37700E53211 /* RoversServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoversServiceError.swift; sourceTree = "<group>"; };
 		74B6611B2C1CD45C00E53211 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 		74B6611F2C1CD6B900E53211 /* URLManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLManager.swift; sourceTree = "<group>"; };
+		74B6618B2C1DD72B00E53211 /* LatestPhotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestPhotos.swift; sourceTree = "<group>"; };
+		74B6618E2C1DD74400E53211 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		74B661912C1DD8D200E53211 /* LatestPhotoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestPhotoResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				74B6611E2C1CD6AB00E53211 /* Manager */,
-				74B661092C1CCDB900E53211 /* URLs.plist */,
 				74B661082C1CCD4A00E53211 /* DTO */,
 				74B661072C1CCD2700E53211 /* Response */,
 				74B661062C1CCD1D00E53211 /* Service */,
@@ -132,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				74B661122C1CD0AC00E53211 /* RoversResponse.swift */,
+				74B661912C1DD8D200E53211 /* LatestPhotoResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -141,6 +147,8 @@
 			children = (
 				74B6610C2C1CCE9D00E53211 /* Rovers.swift */,
 				74B6610F2C1CCF7200E53211 /* Cameras.swift */,
+				74B6618B2C1DD72B00E53211 /* LatestPhotos.swift */,
+				74B6618E2C1DD74400E53211 /* Camera.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -252,7 +260,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74B6610A2C1CCDB900E53211 /* URLs.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +267,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74B6610B2C1CCDB900E53211 /* URLs.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,11 +277,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74B6618C2C1DD72B00E53211 /* LatestPhotos.swift in Sources */,
 				74B661102C1CCF7200E53211 /* Cameras.swift in Sources */,
 				74B661202C1CD6B900E53211 /* URLManager.swift in Sources */,
 				74B6611C2C1CD45C00E53211 /* ErrorHandler.swift in Sources */,
+				74B661922C1DD8D200E53211 /* LatestPhotoResponse.swift in Sources */,
 				74B6610D2C1CCE9D00E53211 /* Rovers.swift in Sources */,
 				74B660EC2C1CCCD700E53211 /* CaseService.docc in Sources */,
+				74B6618F2C1DD74400E53211 /* Camera.swift in Sources */,
 				74B661132C1CD0AC00E53211 /* RoversResponse.swift in Sources */,
 				74B661162C1CD29400E53211 /* RoversService.swift in Sources */,
 				74B661192C1CD37700E53211 /* RoversServiceError.swift in Sources */,
@@ -286,11 +295,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74B6618D2C1DD72B00E53211 /* LatestPhotos.swift in Sources */,
 				74B661112C1CCF7200E53211 /* Cameras.swift in Sources */,
 				74B661212C1CD6B900E53211 /* URLManager.swift in Sources */,
 				74B6611D2C1CD45C00E53211 /* ErrorHandler.swift in Sources */,
+				74B661932C1DD8D200E53211 /* LatestPhotoResponse.swift in Sources */,
 				74B6610E2C1CCE9D00E53211 /* Rovers.swift in Sources */,
 				74B660F72C1CCCD700E53211 /* CaseServiceTests.swift in Sources */,
+				74B661902C1DD74400E53211 /* Camera.swift in Sources */,
 				74B661142C1CD0AC00E53211 /* RoversResponse.swift in Sources */,
 				74B661172C1CD29400E53211 /* RoversService.swift in Sources */,
 				74B6611A2C1CD37700E53211 /* RoversServiceError.swift in Sources */,

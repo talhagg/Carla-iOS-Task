@@ -10,11 +10,10 @@ import Alamofire
 
 public protocol RoversServiceProtocol {
     func fetchRovers(completion: @escaping (Result<RoversResponse, RoversServiceError>) -> Void)
-    func selectedFetchRovers(roverName: String, completion: @escaping (Result<[Cameras], RoversServiceError>) -> Void)
+    func selectedFetchRovers(roverName: String, completion: @escaping (Result<LatestPhotoResponse, RoversServiceError>) -> Void)
 }
 
 public final class RoversService: RoversServiceProtocol {
-    private let baseURL = "https://mars-photos.herokuapp.com/api/v1/rovers"//URLManager.shared.getURL(for: .baseURL)
     private let errorHandler: ErrorHandling
     
     public init(errorHandler: ErrorHandling = ErrorHandler()) {
@@ -22,7 +21,7 @@ public final class RoversService: RoversServiceProtocol {
     }
     
     public func fetchRovers(completion: @escaping (Result<RoversResponse, RoversServiceError>) -> Void) {
-        AF.request(baseURL ?? "").validate().responseData { response in
+        AF.request(URLManager.baseURL).validate().responseData { response in
             switch response.result {
             case .success(let data):
                 do {
@@ -37,14 +36,14 @@ public final class RoversService: RoversServiceProtocol {
         }
     }
     
-    public func selectedFetchRovers(roverName: String, completion: @escaping (Result<[Cameras], RoversServiceError>) -> Void) {
-        let urlString = "\(baseURL)/rovers/\(roverName)/latest_photos"
+    public func selectedFetchRovers(roverName: String, completion: @escaping (Result<LatestPhotoResponse, RoversServiceError>) -> Void) {
+        let urlString = URLManager.roverLatestPhotosURL(for: roverName)
         
         AF.request(urlString).validate().responseData { response in
             switch response.result {
             case .success(let data):
                 do {
-                    let result = try JSONDecoder().decode([Cameras].self, from: data)
+                    let result = try JSONDecoder().decode(LatestPhotoResponse.self, from: data)
                     completion(.success(result))
                 } catch {
                     self.errorHandler.handleError(error: error, completion: completion)
