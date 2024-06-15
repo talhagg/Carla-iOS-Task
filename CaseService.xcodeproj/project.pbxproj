@@ -11,8 +11,6 @@
 		74B660F22C1CCCD700E53211 /* CaseService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B660E72C1CCCD700E53211 /* CaseService.framework */; };
 		74B660F72C1CCCD700E53211 /* CaseServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B660F62C1CCCD700E53211 /* CaseServiceTests.swift */; };
 		74B660F82C1CCCD700E53211 /* CaseService.h in Headers */ = {isa = PBXBuildFile; fileRef = 74B660EA2C1CCCD700E53211 /* CaseService.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		74B661032C1CCD1200E53211 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 74B661022C1CCD1200E53211 /* Alamofire */; };
-		74B661052C1CCD1200E53211 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 74B661042C1CCD1200E53211 /* AlamofireDynamic */; };
 		74B6610D2C1CCE9D00E53211 /* Rovers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B6610C2C1CCE9D00E53211 /* Rovers.swift */; };
 		74B6610E2C1CCE9D00E53211 /* Rovers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B6610C2C1CCE9D00E53211 /* Rovers.swift */; };
 		74B661102C1CCF7200E53211 /* Cameras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B6610F2C1CCF7200E53211 /* Cameras.swift */; };
@@ -33,6 +31,8 @@
 		74B661902C1DD74400E53211 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B6618E2C1DD74400E53211 /* Camera.swift */; };
 		74B661922C1DD8D200E53211 /* LatestPhotoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B661912C1DD8D200E53211 /* LatestPhotoResponse.swift */; };
 		74B661932C1DD8D200E53211 /* LatestPhotoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B661912C1DD8D200E53211 /* LatestPhotoResponse.swift */; };
+		74B661AA2C1E29F200E53211 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 74B661A92C1E29F200E53211 /* Alamofire */; };
+		74B661AC2C1E29F200E53211 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 74B661AB2C1E29F200E53211 /* AlamofireDynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,8 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74B661032C1CCD1200E53211 /* Alamofire in Frameworks */,
-				74B661052C1CCD1200E53211 /* AlamofireDynamic in Frameworks */,
+				74B661AA2C1E29F200E53211 /* Alamofire in Frameworks */,
+				74B661AC2C1E29F200E53211 /* AlamofireDynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,8 +190,8 @@
 			);
 			name = CaseService;
 			packageProductDependencies = (
-				74B661022C1CCD1200E53211 /* Alamofire */,
-				74B661042C1CCD1200E53211 /* AlamofireDynamic */,
+				74B661A92C1E29F200E53211 /* Alamofire */,
+				74B661AB2C1E29F200E53211 /* AlamofireDynamic */,
 			);
 			productName = CaseService;
 			productReference = 74B660E72C1CCCD700E53211 /* CaseService.framework */;
@@ -243,7 +243,7 @@
 			);
 			mainGroup = 74B660DD2C1CCCD700E53211;
 			packageReferences = (
-				74B661012C1CCD1200E53211 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				74B661A82C1E29F200E53211 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 74B660E82C1CCCD700E53211 /* Products */;
 			projectDirPath = "";
@@ -588,7 +588,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		74B661012C1CCD1200E53211 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		74B661A82C1E29F200E53211 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -599,14 +599,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		74B661022C1CCD1200E53211 /* Alamofire */ = {
+		74B661A92C1E29F200E53211 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 74B661012C1CCD1200E53211 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = 74B661A82C1E29F200E53211 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
-		74B661042C1CCD1200E53211 /* AlamofireDynamic */ = {
+		74B661AB2C1E29F200E53211 /* AlamofireDynamic */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 74B661012C1CCD1200E53211 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = 74B661A82C1E29F200E53211 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = AlamofireDynamic;
 		};
 /* End XCSwiftPackageProductDependency section */
