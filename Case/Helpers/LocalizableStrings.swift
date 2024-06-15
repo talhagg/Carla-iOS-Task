@@ -18,4 +18,10 @@ struct LocalizableStrings {
     static let detailNumberTitle = NSLocalizedString("ROVERS_DETAIL_NUMBER_CAMERA_TITLE", comment: "Number title detail view controller")
     static let detailNumberPhotosTitle = NSLocalizedString("ROVERS_DETAIL_NUMBER_PHOTOS_TITLE", comment: "Number photos title detail view controller")
     static let detailIDTitle = NSLocalizedString("ROVERS_DETAIL_ID_TITLE", comment: "ID title detail view controller")
+    
+    // MARK: Rover Photo
+    static let roverImageURLCuriosity = NSLocalizedString("RoverImageURL_Curiosity", comment: "")
+    static let roverImageURLSpirit = NSLocalizedString("RoverImageURL_Spirit", comment: "")
+    static let roverImageURLOpportunity = NSLocalizedString("RoverImageURL_Opportunity", comment: "")
+    static let roverImageURLPerseverance = NSLocalizedString("RoverImageURL_Perseverance", comment: "")
 }

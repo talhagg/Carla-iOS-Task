@@ -11,6 +11,14 @@ final class RoverListVC: UIViewController, UITableViewDelegate, UITableViewDataS
 
     private let tableView = UITableView()
     private let loadingView = UIActivityIndicatorView(style: .large)
+    private let titleLabel = UILabel()
+    
+    let roverImageURLs = [
+        LocalizableStrings.roverImageURLCuriosity,
+        LocalizableStrings.roverImageURLSpirit,
+        LocalizableStrings.roverImageURLOpportunity,
+        LocalizableStrings.roverImageURLPerseverance
+    ]
     
     var viewModel : RoversListViewModelProtocol! {
         didSet {
@@ -24,20 +32,35 @@ final class RoverListVC: UIViewController, UITableViewDelegate, UITableViewDataS
        
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        view.backgroundColor = .white
         viewModel.load()
+        
+        setupTitleLabel()
         setupTableView()
         setupNavigationItem()
         setupLoadingView()
     }
        
     // MARK: - Setup
+    
+    private func setupTitleLabel() {
+        view.addSubview(titleLabel)
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            titleLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 100),
+            titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            titleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16)
+        ])
+        
+        titleLabel.font = UIFont.systemFont(ofSize: 16)
+        titleLabel.text = LocalizableStrings.mainTitle
+    }
        
     private func setupTableView() {
         view.addSubview(tableView)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            tableView.topAnchor.constraint(equalTo: view.topAnchor),
+            tableView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 16),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
@@ -66,18 +89,23 @@ final class RoverListVC: UIViewController, UITableViewDelegate, UITableViewDataS
     }
     
     func handleViewOutput(_ output: RoversListViewModelOutput) {
-        //todo
         switch output {
         case .isLoading(let isLoading):
             isLoading ? loadingView.startAnimating() : loadingView.stopAnimating()
-        case .showCryptoList(let array):
+        case .showRoversList(let array):
             self.roversList = array
             self.tableView.reloadData()
         }
     }
     
     func navigate(to route: RoversListViewRoute) {
-
+        switch route {
+        case .detail:
+            if let roverListViewModel = viewModel as? RoverListViewModel {
+                let detailVC = RoverDetailBuilder.make(roverName: roverListViewModel.getSelectedRoverName())
+                navigationController?.pushViewController(detailVC, animated: true)
+            }
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -87,12 +115,23 @@ final class RoverListVC: UIViewController, UITableViewDelegate, UITableViewDataS
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath) as! RoversListCell
         let rovers = roversList[indexPath.row]
-        let imageURL = URL(string: "https://example.com/image.jpg")
-        cell.configure(with: imageURL, title: rovers.name, subText1: rovers.landing_date, subText2: rovers.launch_date, status: rovers.status, statusColor: .green)
+        
+        if indexPath.row < roverImageURLs.count {
+            let imageURL = URL(string: roverImageURLs[indexPath.row])
+            cell.configure(with: imageURL, title: rovers.name, subText1: rovers.landing_date, subText2: rovers.launch_date, status: rovers.status)
+        } else {
+            cell.configure(with: nil, title: rovers.name, subText1: rovers.landing_date, subText2: rovers.launch_date, status: rovers.status)
+        }
+        
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 180
+        return 170
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedRover = roversList[indexPath.row]
+        viewModel.selectedRovers(selectedRover)
     }
 }

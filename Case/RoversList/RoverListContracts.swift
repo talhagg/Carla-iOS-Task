@@ -10,12 +10,12 @@ import Foundation
 protocol RoversListViewModelProtocol : class {
     var delegate : RoversListViewModelDelegate? { get set }
     func load()
-    func selectedCrypto(_ rovers: RoversPresentation)
+    func selectedRovers(_ rovers: RoversPresentation)
 }
 
 enum RoversListViewModelOutput {
     case isLoading(Bool)
-    case showCryptoList([RoversPresentation])
+    case showRoversList([RoversPresentation])
 }
 
 enum RoversListViewRoute {

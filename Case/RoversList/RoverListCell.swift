@@ -23,8 +23,8 @@ class RoversListCell: UITableViewCell {
     
     private let roversImage: UIImageView = {
         let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFit
-        imageView.widthAnchor.constraint(equalToConstant: 100).isActive = true
+        imageView.widthAnchor.constraint(equalToConstant: 120).isActive = true
+        imageView.heightAnchor.constraint(equalToConstant: 140).isActive = true
         return imageView
     }()
     
@@ -74,6 +74,7 @@ class RoversListCell: UITableViewCell {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 12)
         label.textAlignment = .center
+        label.textColor = .secondaryLabel
         return label
     }()
     
@@ -178,7 +179,7 @@ class RoversListCell: UITableViewCell {
     
     // MARK: - Configuration
     
-    func configure(with imageURL: URL?, title: String, subText1: String, subText2: String, status: String, statusColor: UIColor) {
+    func configure(with imageURL: URL?, title: String, subText1: String, subText2: String, status: String) {
         roversImage.sd_setImage(with: imageURL)
         titleLabel.text = title
         let formattedSubText1 = DateFormatterHelper.shared.formatDate(subText1)
@@ -187,8 +188,14 @@ class RoversListCell: UITableViewCell {
         subTextLabel1.text = formattedSubText1
         subTextLabel2.text = formattedSubText2
         statusLabel.text = status
-        statusView.backgroundColor = statusColor
-        statusView.layer.borderColor = statusColor.cgColor
+        
+        if status == "Deactive" {
+            statusView.backgroundColor = .red
+            statusView.layer.borderColor = UIColor.lightGray.cgColor
+        } else {
+            statusView.backgroundColor = .systemGreen
+            statusView.layer.borderColor = UIColor.lightGray.cgColor
+        }
     }
     
     // MARK: DEINIT

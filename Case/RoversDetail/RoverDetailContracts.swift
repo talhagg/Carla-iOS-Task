@@ -12,6 +12,12 @@ protocol RoverDetailViewModelProtocol {
     func load()
 }
 
+enum RoverDetailViewModelOutput {
+    case isLoading(Bool)
+    case updateTitle(String)
+    case showRoverDetailList([LatestPhotosPresentation])
+}
+
 protocol RoverDetailViewModelDelegate : class {
-    func showDetail(_ presentation: String)
+    func handleViewOutput(_ output: RoverDetailViewModelOutput)
 }
