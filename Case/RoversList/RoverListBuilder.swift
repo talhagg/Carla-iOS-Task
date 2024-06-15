@@ -6,3 +6,17 @@
 //
 
 import Foundation
+import CaseService
+
+public final class RoverListBuilder {
+    
+    static func make() -> RoverListVC {
+        let view = RoverListVC()
+        let errorHandler = ErrorHandler()
+        let service = RoversService(errorHandler: errorHandler)
+        let viewModel = RoverListViewModel(service: service)
+        view.viewModel = viewModel
+        
+        return view
+    }
+}

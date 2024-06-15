@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		74B6612F2C1CD86600E53211 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B6612E2C1CD86600E53211 /* AppDelegate.swift */; };
 		74B661312C1CD86600E53211 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B661302C1CD86600E53211 /* SceneDelegate.swift */; };
-		74B661332C1CD86600E53211 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B661322C1CD86600E53211 /* ViewController.swift */; };
-		74B661362C1CD86600E53211 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 74B661352C1CD86600E53211 /* Base */; };
 		74B661382C1CD86800E53211 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74B661372C1CD86800E53211 /* Assets.xcassets */; };
 		74B6613B2C1CD86800E53211 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 74B6613A2C1CD86800E53211 /* Base */; };
 		74B661462C1CD86800E53211 /* CaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B661452C1CD86800E53211 /* CaseTests.swift */; };
@@ -32,6 +30,8 @@
 		74B6617F2C1CDB7300E53211 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 74B6617E2C1CDB7300E53211 /* SDWebImageMapKit */; };
 		74B661822C1CDD2D00E53211 /* RoversPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B661812C1CDD2D00E53211 /* RoversPresentation.swift */; };
 		74B661852C1CDF1700E53211 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 74B661832C1CDF1700E53211 /* Localizable.strings */; };
+		74B661882C1CEB5100E53211 /* LocalizableStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B661872C1CEB5100E53211 /* LocalizableStrings.swift */; };
+		74B6618A2C1DB5AB00E53211 /* DateFormatterHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B661892C1DB5AB00E53211 /* DateFormatterHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,8 +69,6 @@
 		74B6612B2C1CD86600E53211 /* Case.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Case.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74B6612E2C1CD86600E53211 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74B661302C1CD86600E53211 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		74B661322C1CD86600E53211 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		74B661352C1CD86600E53211 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74B661372C1CD86800E53211 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74B6613A2C1CD86800E53211 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74B6613C2C1CD86800E53211 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,6 +90,8 @@
 		74B661792C1CDAE200E53211 /* RoverDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverDetailCell.swift; sourceTree = "<group>"; };
 		74B661812C1CDD2D00E53211 /* RoversPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoversPresentation.swift; sourceTree = "<group>"; };
 		74B661842C1CDF1700E53211 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		74B661872C1CEB5100E53211 /* LocalizableStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableStrings.swift; sourceTree = "<group>"; };
+		74B661892C1DB5AB00E53211 /* DateFormatterHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,13 +146,12 @@
 		74B6612D2C1CD86600E53211 /* Case */ = {
 			isa = PBXGroup;
 			children = (
+				74B661862C1CEB3F00E53211 /* Helpers */,
 				74B661802C1CDD1400E53211 /* Model */,
 				74B661662C1CD9AD00E53211 /* RoversDetail */,
 				74B661652C1CD9A400E53211 /* RoversList */,
 				74B6612E2C1CD86600E53211 /* AppDelegate.swift */,
 				74B661302C1CD86600E53211 /* SceneDelegate.swift */,
-				74B661322C1CD86600E53211 /* ViewController.swift */,
-				74B661342C1CD86600E53211 /* Main.storyboard */,
 				74B661372C1CD86800E53211 /* Assets.xcassets */,
 				74B661392C1CD86800E53211 /* LaunchScreen.storyboard */,
 				74B6613C2C1CD86800E53211 /* Info.plist */,
@@ -216,6 +215,15 @@
 				74B661812C1CDD2D00E53211 /* RoversPresentation.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		74B661862C1CEB3F00E53211 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				74B661872C1CEB5100E53211 /* LocalizableStrings.swift */,
+				74B661892C1DB5AB00E53211 /* DateFormatterHelpers.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,7 +341,6 @@
 				74B661382C1CD86800E53211 /* Assets.xcassets in Resources */,
 				74B661852C1CDF1700E53211 /* Localizable.strings in Resources */,
 				74B6613B2C1CD86800E53211 /* Base in Resources */,
-				74B661362C1CD86600E53211 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,9 +369,10 @@
 				74B661782C1CDAD200E53211 /* RoverListCell.swift in Sources */,
 				74B661822C1CDD2D00E53211 /* RoversPresentation.swift in Sources */,
 				74B661702C1CDA8700E53211 /* RoverDetailVC.swift in Sources */,
-				74B661332C1CD86600E53211 /* ViewController.swift in Sources */,
 				74B6612F2C1CD86600E53211 /* AppDelegate.swift in Sources */,
+				74B6618A2C1DB5AB00E53211 /* DateFormatterHelpers.swift in Sources */,
 				74B661722C1CDA9500E53211 /* RoverDetailViewModel.swift in Sources */,
+				74B661882C1CEB5100E53211 /* LocalizableStrings.swift in Sources */,
 				74B661762C1CDAC200E53211 /* RoverDetailBuilder.swift in Sources */,
 				74B6616C2C1CDA2300E53211 /* RoverListContracts.swift in Sources */,
 				74B661312C1CD86600E53211 /* SceneDelegate.swift in Sources */,
@@ -408,14 +416,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		74B661342C1CD86600E53211 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				74B661352C1CD86600E53211 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		74B661392C1CD86800E53211 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -566,7 +566,6 @@
 				INFOPLIST_FILE = Case/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -599,7 +598,7 @@
 				INFOPLIST_FILE = Case/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
