@@ -16,6 +16,22 @@
 		74B661462C1CD86800E53211 /* CaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B661452C1CD86800E53211 /* CaseTests.swift */; };
 		74B661502C1CD86800E53211 /* CaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B6614F2C1CD86800E53211 /* CaseUITests.swift */; };
 		74B661522C1CD86800E53211 /* CaseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B661512C1CD86800E53211 /* CaseUITestsLaunchTests.swift */; };
+		74B661602C1CD8AA00E53211 /* CaseService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B6615F2C1CD8AA00E53211 /* CaseService.framework */; };
+		74B661612C1CD8AA00E53211 /* CaseService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 74B6615F2C1CD8AA00E53211 /* CaseService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74B661682C1CD9F900E53211 /* RoverListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B661672C1CD9F900E53211 /* RoverListVC.swift */; };
+		74B6616A2C1CDA0B00E53211 /* RoverListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B661692C1CDA0B00E53211 /* RoverListViewModel.swift */; };
+		74B6616C2C1CDA2300E53211 /* RoverListContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B6616B2C1CDA2300E53211 /* RoverListContracts.swift */; };
+		74B6616E2C1CDA3D00E53211 /* RoverListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B6616D2C1CDA3D00E53211 /* RoverListBuilder.swift */; };
+		74B661702C1CDA8700E53211 /* RoverDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B6616F2C1CDA8700E53211 /* RoverDetailVC.swift */; };
+		74B661722C1CDA9500E53211 /* RoverDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B661712C1CDA9500E53211 /* RoverDetailViewModel.swift */; };
+		74B661742C1CDAAB00E53211 /* RoverDetailContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B661732C1CDAAB00E53211 /* RoverDetailContracts.swift */; };
+		74B661762C1CDAC200E53211 /* RoverDetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B661752C1CDAC200E53211 /* RoverDetailBuilder.swift */; };
+		74B661782C1CDAD200E53211 /* RoverListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B661772C1CDAD200E53211 /* RoverListCell.swift */; };
+		74B6617A2C1CDAE200E53211 /* RoverDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B661792C1CDAE200E53211 /* RoverDetailCell.swift */; };
+		74B6617D2C1CDB7300E53211 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 74B6617C2C1CDB7300E53211 /* SDWebImage */; };
+		74B6617F2C1CDB7300E53211 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 74B6617E2C1CDB7300E53211 /* SDWebImageMapKit */; };
+		74B661822C1CDD2D00E53211 /* RoversPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B661812C1CDD2D00E53211 /* RoversPresentation.swift */; };
+		74B661852C1CDF1700E53211 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 74B661832C1CDF1700E53211 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +51,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		74B661622C1CD8AA00E53211 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				74B661612C1CD8AA00E53211 /* CaseService.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		74B6612B2C1CD86600E53211 /* Case.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Case.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74B6612E2C1CD86600E53211 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +79,19 @@
 		74B6614B2C1CD86800E53211 /* CaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74B6614F2C1CD86800E53211 /* CaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseUITests.swift; sourceTree = "<group>"; };
 		74B661512C1CD86800E53211 /* CaseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		74B6615F2C1CD8AA00E53211 /* CaseService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CaseService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74B661672C1CD9F900E53211 /* RoverListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverListVC.swift; sourceTree = "<group>"; };
+		74B661692C1CDA0B00E53211 /* RoverListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverListViewModel.swift; sourceTree = "<group>"; };
+		74B6616B2C1CDA2300E53211 /* RoverListContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverListContracts.swift; sourceTree = "<group>"; };
+		74B6616D2C1CDA3D00E53211 /* RoverListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverListBuilder.swift; sourceTree = "<group>"; };
+		74B6616F2C1CDA8700E53211 /* RoverDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverDetailVC.swift; sourceTree = "<group>"; };
+		74B661712C1CDA9500E53211 /* RoverDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverDetailViewModel.swift; sourceTree = "<group>"; };
+		74B661732C1CDAAB00E53211 /* RoverDetailContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverDetailContracts.swift; sourceTree = "<group>"; };
+		74B661752C1CDAC200E53211 /* RoverDetailBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverDetailBuilder.swift; sourceTree = "<group>"; };
+		74B661772C1CDAD200E53211 /* RoverListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverListCell.swift; sourceTree = "<group>"; };
+		74B661792C1CDAE200E53211 /* RoverDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverDetailCell.swift; sourceTree = "<group>"; };
+		74B661812C1CDD2D00E53211 /* RoversPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoversPresentation.swift; sourceTree = "<group>"; };
+		74B661842C1CDF1700E53211 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +99,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74B6617D2C1CDB7300E53211 /* SDWebImage in Frameworks */,
+				74B6617F2C1CDB7300E53211 /* SDWebImageMapKit in Frameworks */,
+				74B661602C1CD8AA00E53211 /* CaseService.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +129,7 @@
 				74B661442C1CD86800E53211 /* CaseTests */,
 				74B6614E2C1CD86800E53211 /* CaseUITests */,
 				74B6612C2C1CD86600E53211 /* Products */,
+				74B6615E2C1CD8AA00E53211 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +146,9 @@
 		74B6612D2C1CD86600E53211 /* Case */ = {
 			isa = PBXGroup;
 			children = (
+				74B661802C1CDD1400E53211 /* Model */,
+				74B661662C1CD9AD00E53211 /* RoversDetail */,
+				74B661652C1CD9A400E53211 /* RoversList */,
 				74B6612E2C1CD86600E53211 /* AppDelegate.swift */,
 				74B661302C1CD86600E53211 /* SceneDelegate.swift */,
 				74B661322C1CD86600E53211 /* ViewController.swift */,
@@ -106,6 +156,7 @@
 				74B661372C1CD86800E53211 /* Assets.xcassets */,
 				74B661392C1CD86800E53211 /* LaunchScreen.storyboard */,
 				74B6613C2C1CD86800E53211 /* Info.plist */,
+				74B661832C1CDF1700E53211 /* Localizable.strings */,
 			);
 			path = Case;
 			sourceTree = "<group>";
@@ -127,6 +178,46 @@
 			path = CaseUITests;
 			sourceTree = "<group>";
 		};
+		74B6615E2C1CD8AA00E53211 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74B6615F2C1CD8AA00E53211 /* CaseService.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		74B661652C1CD9A400E53211 /* RoversList */ = {
+			isa = PBXGroup;
+			children = (
+				74B661672C1CD9F900E53211 /* RoverListVC.swift */,
+				74B661692C1CDA0B00E53211 /* RoverListViewModel.swift */,
+				74B6616B2C1CDA2300E53211 /* RoverListContracts.swift */,
+				74B6616D2C1CDA3D00E53211 /* RoverListBuilder.swift */,
+				74B661772C1CDAD200E53211 /* RoverListCell.swift */,
+			);
+			path = RoversList;
+			sourceTree = "<group>";
+		};
+		74B661662C1CD9AD00E53211 /* RoversDetail */ = {
+			isa = PBXGroup;
+			children = (
+				74B6616F2C1CDA8700E53211 /* RoverDetailVC.swift */,
+				74B661712C1CDA9500E53211 /* RoverDetailViewModel.swift */,
+				74B661732C1CDAAB00E53211 /* RoverDetailContracts.swift */,
+				74B661752C1CDAC200E53211 /* RoverDetailBuilder.swift */,
+				74B661792C1CDAE200E53211 /* RoverDetailCell.swift */,
+			);
+			path = RoversDetail;
+			sourceTree = "<group>";
+		};
+		74B661802C1CDD1400E53211 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				74B661812C1CDD2D00E53211 /* RoversPresentation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,12 +228,17 @@
 				74B661272C1CD86600E53211 /* Sources */,
 				74B661282C1CD86600E53211 /* Frameworks */,
 				74B661292C1CD86600E53211 /* Resources */,
+				74B661622C1CD8AA00E53211 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Case;
+			packageProductDependencies = (
+				74B6617C2C1CDB7300E53211 /* SDWebImage */,
+				74B6617E2C1CDB7300E53211 /* SDWebImageMapKit */,
+			);
 			productName = Case;
 			productReference = 74B6612B2C1CD86600E53211 /* Case.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +311,9 @@
 				Base,
 			);
 			mainGroup = 74B661222C1CD86600E53211;
+			packageReferences = (
+				74B6617B2C1CDB7300E53211 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 74B6612C2C1CD86600E53211 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74B661382C1CD86800E53211 /* Assets.xcassets in Resources */,
+				74B661852C1CDF1700E53211 /* Localizable.strings in Resources */,
 				74B6613B2C1CD86800E53211 /* Base in Resources */,
 				74B661362C1CD86600E53211 /* Base in Resources */,
 			);
@@ -258,9 +358,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74B6617A2C1CDAE200E53211 /* RoverDetailCell.swift in Sources */,
+				74B661782C1CDAD200E53211 /* RoverListCell.swift in Sources */,
+				74B661822C1CDD2D00E53211 /* RoversPresentation.swift in Sources */,
+				74B661702C1CDA8700E53211 /* RoverDetailVC.swift in Sources */,
 				74B661332C1CD86600E53211 /* ViewController.swift in Sources */,
 				74B6612F2C1CD86600E53211 /* AppDelegate.swift in Sources */,
+				74B661722C1CDA9500E53211 /* RoverDetailViewModel.swift in Sources */,
+				74B661762C1CDAC200E53211 /* RoverDetailBuilder.swift in Sources */,
+				74B6616C2C1CDA2300E53211 /* RoverListContracts.swift in Sources */,
 				74B661312C1CD86600E53211 /* SceneDelegate.swift in Sources */,
+				74B661682C1CD9F900E53211 /* RoverListVC.swift in Sources */,
+				74B6616A2C1CDA0B00E53211 /* RoverListViewModel.swift in Sources */,
+				74B6616E2C1CDA3D00E53211 /* RoverListBuilder.swift in Sources */,
+				74B661742C1CDAAB00E53211 /* RoverDetailContracts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +422,14 @@
 				74B6613A2C1CD86800E53211 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		74B661832C1CDF1700E53211 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74B661842C1CDF1700E53211 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -368,7 +487,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -425,7 +544,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -448,8 +567,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,9 +577,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.talhagolcugezli.Case;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -476,8 +600,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -485,9 +610,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.talhagolcugezli.Case;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -607,6 +736,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		74B6617B2C1CDB7300E53211 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.19.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		74B6617C2C1CDB7300E53211 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74B6617B2C1CDB7300E53211 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		74B6617E2C1CDB7300E53211 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74B6617B2C1CDB7300E53211 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 74B661232C1CD86600E53211 /* Project object */;
 }
