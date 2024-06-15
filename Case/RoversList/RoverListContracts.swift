@@ -14,7 +14,6 @@ protocol RoversListViewModelProtocol : class {
 }
 
 enum RoversListViewModelOutput {
-    case updateTitle(String)
     case isLoading(Bool)
     case showCryptoList([RoversPresentation])
 }
