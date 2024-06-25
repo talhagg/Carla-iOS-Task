@@ -90,6 +90,7 @@ class RoversListCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupViews()
+        selectionStyle = .none
     }
     
     required init?(coder: NSCoder) {
@@ -189,8 +190,8 @@ class RoversListCell: UITableViewCell {
         subTextLabel2.text = formattedSubText2
         statusLabel.text = status
         
-        if status == "Deactive" {
-            statusView.backgroundColor = .red
+        if status == "complete" {
+            statusView.backgroundColor = .systemYellow
             statusView.layer.borderColor = UIColor.lightGray.cgColor
         } else {
             statusView.backgroundColor = .systemGreen

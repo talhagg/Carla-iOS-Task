@@ -22,13 +22,11 @@ final class RoverDetailVC: UIViewController, UITableViewDataSource, UITableViewD
     
     let label1: UILabel = {
         let label = UILabel()
-        label.text = LocalizableStrings.detailNumberTitle
         return label
     }()
     
     let label2: UILabel = {
         let label = UILabel()
-        label.text = LocalizableStrings.detailNumberTitle
         return label
     }()
     
@@ -48,11 +46,7 @@ final class RoverDetailVC: UIViewController, UITableViewDataSource, UITableViewD
         return pageControl
     }()
     
-    let tableView: UITableView = {
-        let tableView = UITableView()
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        return tableView
-    }()
+    private let tableView = UITableView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -215,5 +209,9 @@ final class RoverDetailVC: UIViewController, UITableViewDataSource, UITableViewD
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let pageIndex = lround(scrollView.contentOffset.x / scrollView.frame.width)
         pageControl.currentPage = Int(pageIndex)
+    }
+    
+    deinit {
+        print("RoverDetailVC Deinited.")
     }
 }
